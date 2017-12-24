@@ -228,13 +228,24 @@ figure figcaption {
 .pt-100 {
     padding-top:10%;
 }
+.table tbody {
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+
+}
+.table th:first-child {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
 .table td:first-child {
     text-align: right;
     width: 25%;
 }
 .table th, .table td{
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6); */
 }
 .table th:last-child {
     background-color: transparent;
@@ -255,6 +266,9 @@ table {
 }
 .table th{
     font-size: 5vmin
+}
+nav span.mejl::after {
+    content: "ljubisas.cv@gmail.com";
 }
 .table span.mejl::before {
     content: "ljubisas.cv@gmail.com";
@@ -297,6 +311,20 @@ img.max-height-250 .down{
      margin:0;
      padding:0;
  }
+ svg#qrObject  {
+     position: absolute;
+     z-index: 0;
+     bottom: 20px;
+     left: 20px;
+     height: 125px;
+     width: auto;
+     fill: #ffffff;
+ }
+ #experience h6 {
+     position: absolute;
+    top:-5px;
+    left:10px;
+ }
 @media screen and (max-width: 990px){ 
     #experience div img  {
        display: none;
@@ -310,10 +338,10 @@ img.max-height-250 .down{
 }
 @media screen and (max-width: 680px){ 
     #experience hr.mb-5,  #experience hr.mt-5,  #experience hr.pb-3 {
-        margin-top:2px !important;
+        /* margin-top:2px !important;
         margin-bottom:2px !important;
         padding-top: 1px !important;
-        padding-bottom: 1px !important;
+        padding-bottom: 1px !important; */
     }
     #intro .display-1{
         line-height: initial;

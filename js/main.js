@@ -20,10 +20,14 @@ $( document ).ready(function() {
             }
         };
 
-    enquire.register(query1, handler1);
+    enquire.register(query1, handler1);   
+    
+});
 
-    
-    
+$( "#contactBtn" ).click(function() {
+    var em = 'ljubisas.cv';
+    $(location).attr('href', 'mailto:'+em+'@gmail.com?subject='
+    + encodeURIComponent("This is my subject"));
 });
 
 console.log( "start!" );
