@@ -333,6 +333,16 @@ img.max-height-250 .down{
     
     border-top: 15px solid #000000;
   }
+  .nav-tabs .nav-link {
+      background-color: rgba(255, 255, 255,0.4);
+      border:1px 1px 1px 0px;
+      border-color: #fff;
+      margin-left: 1px;
+      margin-right: 1px;
+  }
+  .nav-tabs .nav-link:first-child {
+    margin-left: 0px;
+}
 @media screen and (max-width: 990px){ 
     #experience h6 {
         margin-left:auto;
