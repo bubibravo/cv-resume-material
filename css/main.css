@@ -113,6 +113,14 @@ header,
     padding: 0;
     margin:0;    
 }
+table.table a {
+    text-decoration: underline;    
+    color: #fff;
+    font-weight: 900;
+}
+table.table a:hover {
+    color: #ccc;
+}
 main {
     position: relative;
 }
