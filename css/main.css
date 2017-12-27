@@ -97,19 +97,277 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Your custom styles */
+
+html,
+body,
+header,
+#intro, 
+#homePage, 
+#bio, 
+#introduction, 
+#experience, 
+#best-scores, 
+#table-of-contents {
+    height:100%;
+    padding: 0;
+    margin:0;    
+}
+main {
+    position: relative;
+}
+#intro {
+    /* background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); */
+    
+    /* background:  #000000 url("../../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed; */
+    background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    
+}
+h1 {
+    
+    line-break: loose;
+    word-break: normal;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+#intro h1.deepShadow{
+    text-shadow: -1px -1px #c008d1, 
+                -2px 2px #c008d1, 
+                -3px 3px #c008d1,
+                -4px 4px #c008d1,
+                -5px 5px #c008d1,
+                -6px 6px #c008d1,
+                -7px 7px #c008d1;
+}
+#introduction{
+    background:  #000000 url("../images/poly_dark.jpg") no-repeat left bottom fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    position: relative;
+    height: auto;    
+}
+#bio, #projects {
+    background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    position: relative;
+    height: auto;
+}
+#experience {
+    background:  #000000 url("../images/poly_blue.jpg") no-repeat left bottom fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    position: relative;
+    height: auto;
+}
+figure {
+    position: relative;
+}
+
+figure figcaption {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+}
+.profileImg-bg {
+    background: url("../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed;
+    -webkit-background-size:60%;
+    -moz-background-size:60%;
+    -o-background-size:60%;
+    background-size:60%; 
+    height: 100%;
+}
+
+#introduction .text-col-split {
+
+}
+#introduction .shortInfo {  
+    clear: both;
+    display: inline-block;
+}
+#introduction .shorInfo {   
+    display: inline;
+}
+#introduction .shorInfo div {
+    background-color:#363636;
+    float: left;
+    color: #ffffff;
+    padding: 4px;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+#introduction .shorInfo div:last-child {
+    background-color:crimson;    
+    margin-right: 10px;
+}
+.pl-50 {
+    padding-left:50%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+#introduction ol {
+    clear: both;
+    padding: 20px;
+    margin-top: 50px;
 
 
+}
+.pt-100 {
+    padding-top:10%;
+}
+.table tbody {
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
 
+}
+.table th:first-child {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.table td:first-child {
+    text-align: right;
+    width: 25%;
+}
+.table th, .table td{
+    /* background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6); */
+}
+.table th:last-child {
+    background-color: transparent;
+}
+svg {
+    width: 100%;
+    height: 5%;
+}
+table {
+    max-width: none;
+    min-width: none;
+}
+.table tr:first-child td {
+    max-width: 300px;
+}
+.table th{
+    font-size: 5vmin
+}
+nav span.mejl::after {
+    content: "ljubisas.cv@gmail.com";
+}
+.table span.mejl::before {
+    content: "ljubisas.cv@gmail.com";
+}
+.table span.adress::before {
+    content: "♯♬♪-♫♪♩♫-♬♪-♫♪, ";
+}
+img.max-height-250 {
+    max-height: 250px;
+    position: absolute;
+    bottom: -120px;
+}
+img.max-height-250 .up{    
+}
+img.max-height-250 .down{  
+}   
+#intro .display-1{
+    font-size: 9.5vw;
+    font-size: 9.5vmax;
+    letter-spacing: -0.5vw;
+    line-height: 8vw;
+}
+#homeText h2 {
+    font-size: 5.5vmin;
+}
+.display-3{
+    font-size: 9.5vmin;
+}
+#intro .text-center .display-1 {    
+    line-height: initial;
+    font-size: 9.5vmin;
+}
+.profileImage {
 
-
-
-
-
-
-
-
-
-
+}
+#experience .row:last-child img, .last {
+    display: none !important;
+ }
+ footer.page-footer {
+     margin:0;
+     padding:0;
+ }
+ svg#qrObject  {
+     position: absolute;
+     z-index: 0;
+     bottom: 20px;
+     left: 20px;
+     height: 125px;
+     width: auto;
+     fill: #ffffff;
+     display: none;
+ }
+ #experience h6 {
+    position: absolute;
+    top:-10px;
+ }
+ .arrow-down {
+    width: 100%; 
+    height: 0; 
+    border-left:  49vw solid transparent;
+    border-right: 49vw solid transparent;
+    
+    border-top: 15px solid #000000;
+  }
+  .nav-tabs .nav-link {
+      background-color: rgba(255, 255, 255,0.4);
+      border:1px 1px 1px 0px;
+      border-color: #fff;
+      margin-left: 1px;
+      margin-right: 1px;
+  }
+  .nav-tabs .nav-link:first-child {
+    margin-left: 0px;
+}
+@media screen and (max-width: 990px){ 
+    #experience h6 {
+        margin-left:auto;
+        margin-right: auto;
+        width: 80%; 
+        text-align: center; 
+     }
+    #experience hr.pb-3 {
+        padding-bottom: 0px !important;
+    }
+    #intro .display-1{
+        line-height: 10vw;
+    }
+}
+@media screen and (max-width: 680px){ 
+    #experience hr.mb-5,  #experience hr.mt-5,  #experience hr.pb-3 {
+        /* margin-top:2px !important;
+        margin-bottom:2px !important;
+        padding-top: 1px !important;
+        padding-bottom: 1px !important; */
+    }
+    #intro .display-1{
+        line-height: initial;
+    }
+}
 
 
 
@@ -121,7 +379,7 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden {
+ .hidden {
     display: none !important;
 }
 
@@ -230,7 +488,6 @@ textarea {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
@@ -288,226 +545,13 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
-/* Your custom styles */
 
-html,
-body,
-header,
-#intro, 
-#homePage, 
-#bio, 
-#introduction, 
-#experience, 
-#best-scores, 
-#table-of-contents {
-    height:100%;
-    padding: 0;
-    margin:0;    
-    line-break: loose;
-    word-break: normal;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-}
-main {
-    position: relative;
-}
-#intro {
-    /* background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
-    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); */
-    
-    /* background:  #000000 url("../../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed; */
-    background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    
-}
-#intro h1.deepShadow{
-    text-shadow: -1px -1px #c008d1, 
-                -2px 2px #c008d1, 
-                -3px 3px #c008d1,
-                -4px 4px #c008d1,
-                -5px 5px #c008d1,
-                -6px 6px #c008d1,
-                -7px 7px #c008d1;
-}
-#introduction{
-    background:  #000000 url("../images/poly_dark.jpg") no-repeat left bottom fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    position: relative;
-    height: auto;    
-}
-#bio {
-    background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    position: relative;
-    height: auto;
-}
-#experience {
-    background:  #000000 url("../images/poly_blue.jpg") no-repeat left bottom fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    position: relative;
-    height: auto;
-}
-figure {
-    position: relative;
-}
-
-figure figcaption {
-    position: absolute;
-    top: 85%;
-    left: 0;
-    width: 100%;
-}
-.profileImg-bg {
-    background: url("../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed;
-    -webkit-background-size:60%;
-    -moz-background-size:60%;
-    -o-background-size:60%;
-    background-size:60%; 
-    height: 100%;
-}
-
-#introduction .text-col-split {
-
-}
-#introduction .shortInfo {  
-    clear: both;
-    display: inline-block;
-}
-#introduction .shorInfo {   
-    display: inline;
-}
-#introduction .shorInfo div {
-    background-color:#363636;
-    float: left;
-    color: #ffffff;
-    padding: 4px;
-    margin-top: 5px;
-    margin-right: 2px;
-}
-#introduction .shorInfo div:last-child {
-    background-color:crimson;    
-    margin-right: 10px;
-}
-.pl-50 {
-    padding-left:50%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-}
-#introduction ol {
-    clear: both;
-    padding: 20px;
-    margin-top: 50px;
-
-
-}
-.pt-100 {
-    padding-top:10%;
-}
-.table td:first-child {
-    text-align: right;
-    width: 25%;
-}
-.table th, .table td{
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.table th:last-child {
-    background-color: transparent;
-}
-svg {
-    width: 100%;
-    height: 5%;
-}
-a, table.table a {
-    color:crimson;
-}
-table {
-    max-width: none;
-    min-width: none;
-}
-.table tr:first-child td {
-    max-width: 300px;
-}
-.table th{
-    font-size: 5vmin
-}
-.table span.mejl::before {
-    content: "ljubisas.cv@gmail.com";
-}
-.table span.adress::before {
-    content: "♯♬♪-♫♪♩♫-♬♪-♫♪, ";
-}
-img.max-height-250 {
-    max-height: 250px;
-    position: absolute;
-    bottom: -50px;
-}
-img.max-height-250 .up{    
-}
-img.max-height-250 .down{  
-}   
-#intro .display-1{
-    font-size: 9.5vw;
-    font-size: 9.5vmax;
-    letter-spacing: -0.5vw;
-    line-height: 8vw;
-}
-#homeText h2 {
-    font-size: 5.5vmin;
-}
-.display-3{
-    font-size: 9.5vmin;
-}
-#intro .text-center .display-1 {    
-    line-height: initial;
-    font-size: 9.5vmin;
-}
-.profileImage {
-
-}
-#experience .row:last-child img {
-    display: none;
- }
- footer.page-footer {
-     margin:0;
-     padding:0;
- }
-@media screen and (max-width: 990px){ 
-    #experience div img  {
-       display: none;
+    .no-print{
+        display: none;
     }
-    #experience hr.pb-3 {
-        padding-bottom: 0px !important;
-    }
-    #intro .display-1{
-        line-height: 10vw;
-    }
-}
-@media screen and (max-width: 680px){ 
-    #experience hr.mb-5,  #experience hr.mt-5,  #experience hr.pb-3 {
-        margin-top:2px !important;
-        margin-bottom:2px !important;
-        padding-top: 1px !important;
-        padding-bottom: 1px !important;
-    }
-    #intro .display-1{
-        line-height: initial;
+    .col-p-12 {
+        margin: 0;
+        padding:0;
+        width: 100%;
     }
 }

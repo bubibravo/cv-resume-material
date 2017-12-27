@@ -20,10 +20,24 @@ $( document ).ready(function() {
             }
         };
 
-    enquire.register(query1, handler1);
+    enquire.register(query1, handler1);   
+    
+});
 
-    
-    
+$( "#contactBtn" ).click(function() {
+    var em = 'ljubisas.cv';
+    $(location).attr('href', 'mailto:'+em+'@gmail.com?subject='
+    + encodeURIComponent("This is my subject"));
+});
+
+$("#websites").click(function() {
+    $('.nav-tabs a[href="#panel144"]').tab('show');
+});
+$("#apps").click(function() {
+    $('.nav-tabs a[href="#panel12"]').tab('show');
+});
+$("#flash").click(function() {
+    $('.nav-tabs a[href="#panel13"]').tab('show');
 });
 
 console.log( "start!" );
