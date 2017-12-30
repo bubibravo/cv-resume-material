@@ -1,0 +1,66 @@
+{
+    "experience": {
+        "Job1":{ 
+            "Date": "06.2016 - 08.2017",
+            "Company": "Matrix Global Macedonia, Skopje",
+            "Link": "#",
+            "Indusrty": "Video Stream Casino Games Development",
+            "JobDesc": {
+                "Title": "Front-End &amp; Client-Side Developer",
+                "Tech": ["Flash", "Actionscript 3", "HTML5", "CSS3", "Javascript", "Phaser"]                
+            }
+        },
+        "Job2":{ 
+            "Date": "08.2012 - 06.2016",
+            "Company": "Interactive Digital Agency GRAVITY, Skopje",
+            "Link": "#",
+            "Indusrty": "Video Stream Casino Games Development",
+            "JobDesc": {
+                "Title": "Front-End Developer &amp; Designer",
+                "JobTitle": "Front-End &amp; Client-Side Developer",
+                "Tech": ["Flash", "Actionscript 3", "HTML5", "CSS3", "jQuery", "Bootstrap", "Animations", "Javascript"]                
+            }
+        },
+        "Job3":{ 
+            "Date": "05.2012 - 08.2012",
+            "Company": "Reform (Re4m Solution Center), Skopje",
+            "Link": "#",
+            "Indusrty": "Software Development",
+            "JobDesc": {
+                "Title": "Flex Developer",
+                "Tech": ["Flex"]                
+            }
+        },
+        "Job4":{ 
+            "Date": "05.2007 - 05.2012",
+            "Company": "Toopix Creative, Skopje",
+            "Link": "#",
+            "Indusrty": "Full Service Marketing Agency",
+            "JobDesc": {
+                "Title": "Co-founder, Web Designer &amp; Developer",
+                "Tech": ["xHTML", "CSS 2", "PHP", "JavaScript", "ActionScript 2", "Actionscript 3" ]                
+            }
+        },
+        "Job5":{ 
+            "Date": "06.2006 - 05.2007",
+            "Company": " Taurus Multimedia, Skopje",
+            "Link": "#",
+            "Indusrty": "Game Development Studio",
+            "JobDesc": {
+                "Title": "Flash Team Leader",
+                "Tech": ["Flash", "ActionScript 2", "Actionscript 3" ]                
+            }
+        },
+        "Job6":{ 
+            "Date": "02.2005 - 06.2006",
+            "Company": "EBCA, Skopje",
+            "Link": "#",
+            "Indusrty": "Web Development Agency",
+            "JobDesc": {
+                "Title": "Front-End Developer &amp; Designer",
+                "JobTitle": "Front-End &amp; Client-Side Developer",
+                "Tech": ["Flash", "ActionScript 2", "ASP", "xHTML", "JavaScript" ]                
+            }
+        }
+    }
+}

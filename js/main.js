@@ -5,7 +5,6 @@ $( document ).ready(function() {
     var $intro = $('.introTxt');
 
     var query1 = "screen and (max-width: 40em)",
-        query2 = "screen and (max-width: 50em)",
         handler1 = {
             match : function() {
                 $info.removeClass('text-right');
