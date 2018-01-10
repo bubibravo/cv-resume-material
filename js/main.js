@@ -19,36 +19,22 @@ $( document ).ready(function() {
             }
         };
 
-    enquire.register(query1, handler1);   
-     // set up the base pattern
-     var pattern = Trianglify({
+    enquire.register(query1, handler1);  
+
+    generateCanvasBG();
+});
+function generateCanvasBG(){
+    // set up the base pattern
+    var pattern = Trianglify({
         height: window.innerHeight,
         width: window.innerWidth,
         cell_size: 30 + Math.random() * 100});
-    
-        // canvas
-        //document.body.appendChild(pattern.canvas())    
-        // svg
-        //document.body.appendChild(pattern.svg())
-            
-        // png
-        var png = document.createElement('img')
-        png.src = pattern.png();
-        //document.body.appendChild(png)
-        $('.triangle-bg').append(pattern.canvas());
-        var pattern2 = Trianglify({cell_size: 75, seed: '265rk', x_colors: 'Blues'}).png();
-        
-        //png.src = pattern2;
-        
-        console.log(pattern2);
-        console.log(png.src);
-        //$('.triangle-bg2').append(pattern.canvas());
-        //$('triangle-bg2').css('background-image', 'url(' + png.src + ')');
-        $('#experience').css('background-image', 'url(' + pattern2 + ')');
-    
-    
-    
-});
+
+    $('.triangle-bg').append(pattern.canvas());
+
+    var pattern2 = Trianglify({cell_size: 75, seed: '265rk', x_colors: 'Blues'}).png();
+    $('#experience').css('background-image', 'url(' + pattern2 + ')');
+}
 
 $( "#contactBtn" ).click(function() {
     var em = 'ljubisas.cv';
@@ -64,6 +50,11 @@ $("#apps").click(function() {
 });
 $("#flash").click(function() {
     $('.nav-tabs a[href="#panel13"]').tab('show');
+});
+$("#intro").mousemove(function(event) {
+    // console.log("mousemove");
+    // $('.triangle-bg canvas').remove();
+    // $('.triangle-bg').append(Trianglify({variance: 0.3, cell_size: 30 + Math.random() * 100, x_colors: 'PuRd'}).canvas());    
 });
 
 console.log( "start!" );
