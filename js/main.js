@@ -1,39 +1,27 @@
 $( document ).ready(function() {
     console.log( "ready!" );
+
+    var triagilizeBG = true;
+    var $info = $('#intro');
     new WOW().init();
-    var $info = $('#homeText');
-    var $intro = $('.introTxt');
 
-    var query1 = "screen and (max-width: 40em)",
-        handler1 = {
-            match : function() {
-                $info.removeClass('text-right');
-                $intro.removeClass('pr-5');
-                $info.addClass('text-center');
-            },
-            unmatch : function() {
-                console.log("handler 1 unmatched")
-                $info.removeClass('text-center');
-                $info.addClass('text-right');
-                $intro.addClass('pr-5');
-            }
-        };
-
-    enquire.register(query1, handler1);  
-
-    generateCanvasBG();
+    (triagilizeBG) ? generateCanvasBG("#intro") : $info.addClass("purpleBG");
+    generateCanvasBG("#experience");
 });
-function generateCanvasBG(){
+
+function generateCanvasBG(element){
     // set up the base pattern
+    var $element = $(element);
+
     var pattern = Trianglify({
-        height: window.innerHeight,
-        width: window.innerWidth,
-        cell_size: 30 + Math.random() * 100});
+        height: $element.height(),
+        width: $element.width(),
+        cell_size: 100 + Math.random() * 100});
 
-    $('.triangle-bg').append(pattern.canvas());
-
-    var pattern2 = Trianglify({cell_size: 75, seed: '265rk', x_colors: 'Blues'}).png();
-    $('#experience').css('background-image', 'url(' + pattern2 + ')');
+    $element.append("<div class='triangle-bg'></div>");    
+    $("#"+$element.attr('id') +" .triangle-bg").append(pattern.canvas());    
+    console.log("generateCanvasBG:", $element);
+    console.log($element.attr('id') +" .triangle-bg");
 }
 
 $( "#contactBtn" ).click(function() {
@@ -50,11 +38,6 @@ $("#apps").click(function() {
 });
 $("#flash").click(function() {
     $('.nav-tabs a[href="#panel13"]').tab('show');
-});
-$("#intro").mousemove(function(event) {
-    // console.log("mousemove");
-    // $('.triangle-bg canvas').remove();
-    // $('.triangle-bg').append(Trianglify({variance: 0.3, cell_size: 30 + Math.random() * 100, x_colors: 'PuRd'}).canvas());    
 });
 
 console.log( "start!" );
