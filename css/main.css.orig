@@ -102,19 +102,19 @@ textarea {
 html,
 body,
 header,
-#intro,
-#homePage,
-#bio,
-#introduction,
-#experience,
-#best-scores,
+#intro, 
+#homePage, 
+#bio, 
+#introduction, 
+#experience, 
+#best-scores, 
 #table-of-contents {
     height:100%;
     padding: 0;
-    margin:0;
+    margin:0;    
 }
 table.table a {
-    text-decoration: underline;
+    text-decoration: underline;    
     color: #fff;
     font-weight: 900;
 }
@@ -129,65 +129,34 @@ main {
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); */
-
+    
     /* background:  #000000 url("../../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed; */
+<<<<<<< HEAD
+=======
+    background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
+>>>>>>> feature/json_input
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-
+    
 }
+<<<<<<< HEAD
 .purpleBG {
     background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
 }
-h1 {
+=======
 
+>>>>>>> feature/json_input
+h1 {
+    
     line-break: normal;
     word-break: normal;
-    word-wrap: normal;
-}
-.glasses {
-    position: fixed;
-    width: 22.1%;
-    height: auto;
-    bottom: 35.7vw;
-    left: 20.6vw;
-    background:  #b90000 no-repeat left bottom scroll;
-    opacity: 0.8;
-    -webkit-background-size:cover;
-    -moz-background-size:   cover;
-    -o-background-size:     cover;
-    background-size:        cover;
-
-}
-#intro .glasses {
-    background:  #258308 url("../images/poly.jpg");    
-    /* clip-path: url(#clipping); */
-}
-#introduction .glasses {
-    background:  #dee200 url("../images/poly_dark.jpg");    
-    clip-path: url(#clipping2);
-}
-.glasses img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top:0px;
-}
-#intro .glasses svg{
-    /* fill:  linear-gradient(-45deg,
-    rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%); */
-    /* fill: red; */
-    z-index: 200;
-}
-
-#intro h1{
-    font-size: 8.5vw;
-    line-height: 1.5ex;
+    word-wrap: break-word;
 }
 #intro h1.deepShadow{
-    /* text-shadow: -1px -1px #c008d1,
-                -2px 2px #c008d1,
+    /* text-shadow: -1px -1px #c008d1, 
+                -2px 2px #c008d1, 
                 -3px 3px #c008d1,
                 -4px 4px #c008d1,
                 -5px 5px #c008d1,
@@ -204,7 +173,7 @@ h1 {
     -o-background-size:cover;
     background-size:cover;
     position: relative;
-    height: auto;
+    height: auto;    
 }
 #bio, #projects {
     background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
@@ -236,21 +205,21 @@ figure figcaption {
 }
 .profileImg-bg {
     background: url("../images/me-polygonical-this_transparent.png") no-repeat left bottom fixed;
-    -webkit-background-size: 62%;
-    -moz-background-size:    62%;
-    -o-background-size:      62%;
-    background-size:         62%;
+    -webkit-background-size:60%;
+    -moz-background-size:60%;
+    -o-background-size:60%;
+    background-size:60%; 
     height: 100%;
 }
 
 #introduction .text-col-split {
 
 }
-#introduction .shortInfo {
+#introduction .shortInfo {  
     clear: both;
     display: inline-block;
 }
-#introduction .shorInfo {
+#introduction .shorInfo {   
     display: inline;
 }
 #introduction .shorInfo div {
@@ -262,7 +231,7 @@ figure figcaption {
     margin-right: 2px;
 }
 #introduction .shorInfo div:last-child {
-    background-color:crimson;
+    background-color:crimson;    
     margin-right: 10px;
 }
 .pl-50 {
@@ -330,10 +299,10 @@ img.max-height-250 {
     position: absolute;
     bottom: -120px;
 }
-img.max-height-250 .up{
+img.max-height-250 .up{    
 }
-img.max-height-250 .down{
-}
+img.max-height-250 .down{  
+}   
 #intro .display-1{
     font-size: 9.5vw;
     font-size: 9.5vmax;
@@ -346,7 +315,7 @@ img.max-height-250 .down{
 .display-3{
     font-size: 9.5vmin;
 }
-#intro .text-center .display-1 {
+#intro .text-center .display-1 {    
     line-height: initial;
     font-size: 9.5vmin;
 }
@@ -375,10 +344,10 @@ img.max-height-250 .down{
     top:-10px;
  }
  .arrow-down {
-    width: 100%;
-    height: 0;
+    width: 100%; 
+    height: 0; 
     border-left:  49vw solid transparent;
-    border-right: 49vw solid transparent;
+    border-right: 49vw solid transparent;    
     border-top: 15px solid #000000;
     position: absolute;
     bottom: 0px;
@@ -414,7 +383,7 @@ img.max-height-250 .down{
      width: 100%;
      height:100%;
  }
- .text-shadow {
+ .text-shadow {    
     text-shadow: -3px 3px rgb(32, 33, 34);
  }
  .experience-step {
@@ -429,12 +398,12 @@ img.max-height-250 .down{
     filter: FlipH;
     -ms-filter: "FlipH";
  }
-@media screen and (max-width: 990px){
+@media screen and (max-width: 990px){ 
     #experience h6 {
         margin-left:auto;
         margin-right: auto;
-        width: 80%;
-        text-align: center;
+        width: 80%; 
+        text-align: center; 
      }
     #experience hr.pb-3 {
         padding-bottom: 0px !important;
@@ -443,7 +412,7 @@ img.max-height-250 .down{
         line-height: 10vw;
     }
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 680px){ 
     #experience hr.mb-5,  #experience hr.mt-5,  #experience hr.pb-3 {
         /* margin-top:2px !important;
         margin-bottom:2px !important;

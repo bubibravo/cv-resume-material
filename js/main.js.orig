@@ -1,31 +1,33 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    
-    var triagilizeBG = false;
+
+    var triagilizeBG = true;
     var $info = $('#intro');
     new WOW().init();
+<<<<<<< HEAD
+
+    (triagilizeBG) ? generateCanvasBG("#intro") : $info.addClass("purpleBG");
+    generateCanvasBG("#experience");
+=======
+    let $info = $('#homeText');
+    let $intro = $('.introTxt');
     
     let webContent;
     loadJSON_Content();
     //loadSection();
 
-    (triagilizeBG) ? generateCanvasBG("#intro") : $info.addClass("purpleBG");
+    //generateCanvasBG();
+>>>>>>> feature/json_input
 });
 
-function generateCanvasBG(element, palette){
+function generateCanvasBG(element){
     // set up the base pattern
-    var defaultPalette = "RdPu";
-    console.log("generateBG: ", element)
     var $element = $(element);
 
     var pattern = Trianglify({
-        height: ($element.height()>1) ? $element.height() : 800,
-        width: ($element.width()<1) ? $element.width() : 600,
-        x_colors: defaultPalette,
+        height: $element.height(),
+        width: $element.width(),
         cell_size: 100 + Math.random() * 100});
-
-    var pattern2 = Trianglify({cell_size: 75, seed: '265rk', x_colors: 'Blues'}).png();
-
 
     $element.append("<div class='triangle-bg'></div>");    
     $("#"+$element.attr('id') +" .triangle-bg").append(pattern.canvas());    
@@ -60,7 +62,7 @@ $("#flash").click(function() {
 
 
 function loadJSON_Content(){
-    loadAjax = $.ajax({
+    testVar = $.ajax({
         url:'content/experience.json',
         dataType: 'json',
         type: 'get',
@@ -84,11 +86,8 @@ function loadJSON_Content(){
 function JSON_ContentLoaded(){    
     console.log("JSON_ContentLoaded");
     loadAllSections();
-    generateMenu();
+    generateMainMenu();
     
-}
-function generateSkilsFields(){
-
 }
 function loadAllSections(){
     $.each(webContent,function(index){  
@@ -128,19 +127,9 @@ function sectionLoaded(page, contentObj){
     // else $("#"+contentObjID).replaceWith(sectionHtml);
 
     if ((contentObj!==undefined)&&(contentObj.list)) generateExpComponent(contentObj.Jobs);
-    //if (contentObj.id == "experience") generateCanvasBG("#experience");
-    switch(contentObj.id) {
-        case "experience" : 
-            generateCanvasBG("#experience");
-            break;
-        case "bio":
-            generateCanvasBG("#bio");
-        ;
-            
-    }
 }
 
-function generateMenu(){
+function generateMainMenu(){
     console.log("g-MainMenu");
     $.each(webContent, function(index) {
         let menubtnID = webContent[index].id+"-menubtn";
@@ -154,9 +143,6 @@ function generateMenu(){
             }, 1000);
         }); 
     });
-}
-function gnerateTabs(){
-
 }
 function generateExpComponent(jobs){
     console.log("genrate LIST: ", jobs);          
