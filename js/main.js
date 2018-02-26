@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    var triagilizeBG = true;
+    var triagilizeBG = false;
     var $info = $('#intro');
     new WOW().init();
 
