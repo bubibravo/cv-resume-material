@@ -170,7 +170,7 @@ h1 {
     position: relative;
     height: auto;    
 }
-#bio, #projects {
+#bio {
     background:  #000000 url("../images/poly.jpg") no-repeat left bottom fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -179,7 +179,7 @@ h1 {
     position: relative;
     height: auto;
 }
-#experience {
+#experience, #projects {
     /* background:  #000000 url("../images/poly_blue.jpg") no-repeat left bottom fixed; */
     -webkit-background-size:auto;
     -moz-background-size:auto;
@@ -370,6 +370,9 @@ img.max-height-250 .down{
  canvas {
      width: 100%;
      height:100%;
+ }
+ h5.pink-text {
+     margin-top: -35px;
  }
 @media screen and (max-width: 990px){ 
     #experience h6 {
